@@ -1,5 +1,5 @@
 
 window.onload=function(){
-    alert("siteye hoşgeldiniz!")
+    alert("Siteye hoşgeldiniz!")
     console.log("test")
 }
