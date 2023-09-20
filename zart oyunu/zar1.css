@@ -1,0 +1,30 @@
+body{
+    background-color: black;
+
+}
+
+input{
+    background-color: white;
+    color: black;
+    position: absolute;
+    right: 50%
+}
+
+.zarlar{
+    display: flex;
+    height: 300px;
+    width: 600px;
+    background-color: gray;
+    position: absolute;
+    right: 50%;
+    left: 50%;
+}
+
+.zar{
+    width: 100px;
+   height: 150px;
+   margin: 15px;
+   padding: 20px;
+   text-align: center;
+
+}
