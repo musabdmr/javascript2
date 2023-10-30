@@ -1,0 +1,127 @@
+body {
+    background-color: brown;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+}
+
+.App {
+    text-align: center;
+}
+
+.character {
+    background-color: #ff5733;
+    padding: 20px;
+    width: 200px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 10px;
+    position: relative;
+}
+
+.health-bar {
+    background-color: #333;
+    height: 20px;
+    border-radius: 10px;
+    margin-top: 10px;
+    overflow: hidden;
+}
+
+.health-bar-inner {
+    background-color: #39ff14;
+    height: 100%;
+    transition: width 0.3s;
+}
+
+.sword {
+    background-color: silver;
+    height: 40px;
+    width: 10px;
+    position: absolute;
+    top: 50px;
+    left: 95px;
+    cursor: pointer;
+}
+
+.defend-button {
+    background-color: #00cc66;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#saldırı {
+    background-color: #247BA0;
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    bottom: 30%;
+    left: 37%;
+}
+
+#savunma {
+    background-color: #FFE066;
+    font-size: 30px;
+    color: black;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    bottom: 30%;
+    left: 46%;
+}
+
+#can {
+    background-color: #5EEB5B;
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 60px;
+    width: 120px;
+    position: absolute;
+    bottom: 30%;
+    left: 56%;
+}
+
+#clay {
+    width: 240px;
+    height: 120px;
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 26px;
+    box-shadow: 35px 35px 68px 0px rgba(145, 192, 255, 0.5), inset -8px -8px 16px 0px rgba(145, 192, 255, 0.6), inset 0px 11px 28px 0px rgb(255, 255, 255);
+}
+
+#kılıc1 {
+    background-color: #5EEB5B;
+    font-size: 30px;
+    color: white;
+    margin: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    height: 35px;
+    width: 20px;
+    position: absolute;
+    top: 50%;
+    left: 46%;
+
+}
+
+#kazanan {
+    font-size: 150px;
+    color: white;
+}

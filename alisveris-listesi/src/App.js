@@ -12,9 +12,10 @@ function App() {
     { name: 'Salça', checked: false },
   ];
 
-  const [items, setItems] = useState(initialItems);
+  const [items, setItems] = useState(JSON.parse(localStorage.getItem('list')) || initialItems);
   const [newItem, setNewItem] = useState('');
   const [selectAll, setSelectAll] = useState(false);
+  const [sortedItems, setSortedItems] = useState([]);
 
   const addItem = () => {
     if (newItem.trim() !== '') {
@@ -45,6 +46,14 @@ function App() {
     setItems([]);
   };
 
+  useEffect(() => {
+    const temp2 = items.sort((ilk, ikinci) => Number(ilk.checked) - Number(ikinci.checked));
+    setSortedItems(temp2);
+    localStorage.setItem('list', JSON.stringify(temp2));
+  }, [items])
+
+
+
   return (
     <div className="App">
       <h1>Alışveriş Listesi</h1>
@@ -63,7 +72,7 @@ function App() {
         <button onClick={addItem}>Ekle</button>
       </div>
       <ul>
-        {items.map((item, index) => (
+        {sortedItems.map((item, index) => (
           <li key={index}>
             <input
               type="checkbox"

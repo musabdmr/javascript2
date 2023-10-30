@@ -1,0 +1,24 @@
+.character {
+  display: inline-block;
+  margin: 20px;
+  padding: 10px;
+  border: 1px solid #000;
+  background-color: #eee;
+}
+
+.sword {
+  width: 60px;
+  height: 20px;
+  background-color: #b27300;
+  cursor: pointer;
+  text-align: center;
+  line-height: 20px;
+  color: #fff;
+  margin-top: 10px;
+}
+
+.message {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
